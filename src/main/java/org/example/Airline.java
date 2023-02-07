@@ -1,9 +1,15 @@
+package org.example;
+
+import org.example.Passengers;
+
 import java.util.ArrayList;
 
 public class Airline {
 
     // Properties
     private ArrayList<Flights> flights;
+
+    public String bookFlight;
 
 
     // Constructor
@@ -20,6 +26,9 @@ public class Airline {
         this.flights = flights;
     }
 
+    // Method to call on instructions from user
+
+
     // Method that add new flight: adds a flight to the arraylist of flights using the add method.
     public void addFlight(Flights flight) {
         flights.add(flight);
@@ -27,7 +36,7 @@ public class Airline {
 
     // Method for displaying all flights: the method iterates through the array list of flights and prints out a destination and a flight id
     public void displayFlights() {
-        System.out.println("List of Flights: ");
+        System.out.println("List of org.example.Flights: ");
         for (Flights flight : flights) {
             System.out.println("Destination: " + flight.getDestination() + ", Flight ID: " + flight.getFlightId());
         }
@@ -54,4 +63,5 @@ public class Airline {
         }
     }
 
-}
+
+    }

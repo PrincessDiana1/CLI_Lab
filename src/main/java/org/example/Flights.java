@@ -1,3 +1,7 @@
+package org.example;
+
+import org.example.Passengers;
+
 import java.util.ArrayList;
 
 public class Flights {

@@ -1,14 +1,14 @@
-
+package org.example;
 
 public class Passengers {
     private String name;
-    private int contactInfo;
-    private int Id;
+    private String contactInfo;
+    private int id;
 
-    public Passengers(String name, int contactInfo, int id) {
+    public Passengers(String name, String contactInfo, int id) {
         this.name = name;
         this.contactInfo = contactInfo;
-        Id = id;
+        id = id;
     }
 
     public String getName() {
@@ -19,19 +19,19 @@ public class Passengers {
         this.name = name;
     }
 
-    public int getContactInfo() {
+    public String getContactInfo() {
         return contactInfo;
     }
 
-    public void setContactInfo(int contactInfo) {
+    public void setContactInfo(String contactInfo) {
         this.contactInfo = contactInfo;
     }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        id = id;
     }
 }
